@@ -7,7 +7,7 @@
   <!-- =========================
        CAMBIAR PARA CADA CLIENTE
        ========================= -->
-  <title>Urban Burger | Restaurante</title>
+  <title>Rey Zorro Burger | Restaurante</title>
   <meta
     name="description"
     content="Hamburguesas artesanales, bebidas, entradas y mucho sabor."
@@ -29,8 +29,8 @@
       --fondo-3: #171717;
       --tarjeta: #191919;
 
-      --principal: #f2b51d;
-      --principal-claro: #ffd45c;
+      --principal: #e4ad9a;
+      --principal-claro: #f2c7b8;
 
       --texto: #ffffff;
       --texto-gris: #b7b7b7;
@@ -251,7 +251,7 @@
           rgba(0,0,0,.44) 67%,
           rgba(0,0,0,.20) 100%
         ),
-        url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=85&w=1800&auto=format&fit=crop");
+        url("./imagenes/hamburguesa.webp");
 
       background-size: cover;
       background-position: center;
@@ -263,7 +263,7 @@
       width: 500px;
       height: 500px;
       border-radius: 50%;
-      background: rgba(242,181,29,.10);
+      background: rgba(228,173,154,.10);
       filter: blur(100px);
       right: -100px;
       top: 60px;
@@ -282,8 +282,8 @@
       padding: 7px 14px;
       margin-bottom: 22px;
       border-radius: 999px;
-      border: 1px solid rgba(242,181,29,.35);
-      background: rgba(242,181,29,.08);
+      border: 1px solid rgba(228,173,154,.35);
+      background: rgba(228,173,154,.08);
       color: var(--principal);
       font-size: 12px;
       letter-spacing: 1.5px;
@@ -496,7 +496,7 @@
 
     .promo-box {
       background:
-        linear-gradient(120deg, #d89900, var(--principal), #ffd258);
+        linear-gradient(120deg, #a65d52, var(--principal), #f2c7b8);
       color: #111;
       border-radius: 25px;
       padding: 45px;
@@ -831,18 +831,18 @@
     /* =======================================================
        MENÚ ESENCIAL - CAMBIAR COLORES EN :root AL INICIO
        ======================================================= */
-    .menu-esencial {background: radial-gradient(ellipse at 15% 0%,rgba(242,181,29,.07),transparent 55%),var(--fondo-2);}
+    .menu-esencial {background: radial-gradient(ellipse at 15% 0%,rgba(228,173,154,.07),transparent 55%),var(--fondo-2);}
     .menu-cabecera {margin-bottom:32px}
     .categorias-pestanas {display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;scroll-margin-top:100px}
     .pestana-menu {cursor:pointer;display:flex;align-items:center;gap:9px;padding:13px 19px;border:1.5px solid #484848;border-radius:999px;background:#191919;color:#eee;font-weight:800;transition:border-color .25s,transform .25s,box-shadow .25s,background .25s}
     .pestana-menu:hover {border-color:var(--principal);transform:translateY(-2px)}
-    .pestana-menu.activa {border-color:var(--principal);color:var(--principal);background:#24200e;box-shadow:0 0 0 1px var(--principal),0 0 20px rgba(242,181,29,.26)}
+    .pestana-menu.activa {border-color:var(--principal);color:var(--principal);background:#362322;box-shadow:0 0 0 1px var(--principal),0 0 20px rgba(228,173,154,.26)}
     .menu-distribucion {display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:26px;align-items:start}
     .lista-productos {background:linear-gradient(150deg,#1c1c1c,#121212);border:1px solid #3a3a3a;border-radius:22px;padding:13px;min-width:0;perspective:1100px}
     .plato-item {position:relative;padding:18px 18px;border-radius:15px;border:2px solid transparent;background:transparent;margin:3px 0;transition:transform .34s cubic-bezier(.2,.9,.2,1.1),box-shadow .34s,border-color .34s,background .34s;z-index:1}
     .plato-item:not(:last-child):after {content:"";position:absolute;left:18px;right:18px;bottom:-4px;height:1px;background:#383838}
-    .plato-item:hover {border-color:#78621e;background:#25231c}
-    .plato-item.seleccionado {z-index:5;transform:translate3d(0,-6px,26px) scale(1.025);border-color:var(--principal);background:linear-gradient(110deg,#302713,#181818 65%);box-shadow:0 17px 0 -10px #9d720d,0 24px 38px #000b,0 0 25px rgba(242,181,29,.23)}
+    .plato-item:hover {border-color:#a65d52;background:#302323}
+    .plato-item.seleccionado {z-index:5;transform:translate3d(0,-6px,26px) scale(1.025);border-color:var(--principal);background:linear-gradient(110deg,#382323,#181818 65%);box-shadow:0 17px 0 -10px #a65d52,0 24px 38px #000b,0 0 25px rgba(228,173,154,.23)}
     .plato-linea {display:flex;align-items:center;gap:14px;justify-content:space-between}
     .plato-texto {min-width:0;flex:1}
     .plato-texto h3 {font-size:19px;font-weight:900;margin-bottom:4px}
@@ -851,7 +851,7 @@
     .plato-precio {color:var(--principal);font-weight:900;font-size:19px;white-space:nowrap}
     .elegir-plato,.sumar-plato {border:1px solid #777;border-radius:12px;padding:9px 13px;background:#111;color:white;font-weight:800;cursor:pointer;white-space:nowrap;transition:.2s}
     .elegir-plato:hover,.plato-item.seleccionado .elegir-plato {background:var(--principal);border-color:var(--principal);color:#111}
-    .detalle-plato {display:none;margin-top:15px;padding-top:14px;border-top:1px solid #5b4a21;animation:aparecer .25s ease}
+    .detalle-plato {display:none;margin-top:15px;padding-top:14px;border-top:1px solid #704b46;animation:aparecer .25s ease}
     .plato-item.seleccionado .detalle-plato {display:block}
     .detalle-plato label {display:block;font-size:13px;font-weight:700;color:#ddd;margin-bottom:7px}
     .detalle-plato textarea {width:100%;min-height:55px;resize:vertical;padding:11px;background:#101010;border:1px solid #555;border-radius:9px;color:#fff;font:inherit}
@@ -916,113 +916,9 @@
     @media(prefers-reduced-motion:reduce) {.plato-item,.pestana-menu{transition:none}.plato-item.seleccionado{transform:none}}
 
   
-    .hero-burger-movil, .hero-texto-movil, .hero-icono-corona,
-    .icono-cta { display: none; }
-    @media (max-width: 720px) {
-      .beneficios { display: none; }
-      .menu-esencial { padding-top: 65px; }
-    }
-
-
-    /* ========================================================
-       INICIO MÓVIL — VERSIÓN 2 CON CARGA VERIFICADA
-       La ilustración conserva la tipografía, los íconos y la foto.
-       Los enlaces HTML se alinean encima de los botones dibujados.
-       Imagen externa: ./imagenes/portada.jpg?v=3
-       Escritorio conserva sus estilos originales.
-       ======================================================== */
     .carrito-icono-referencia { display: none; }
 
     @media (max-width: 720px) {
-      body { padding-bottom: max(72px, 18.75vw); }
-
-      /* Primeros 146 píxeles de la referencia: encabezado. */
-      html.portada-cargada header {
-        position: relative;
-        height: 16.898148vw;
-        border: 0;
-        backdrop-filter: none;
-        background: #050505 url("./imagenes/portada.jpg?v=3")
-                    left top / 100vw auto no-repeat;
-      }
-      html.portada-cargada header .nav { width: 100%; height: 100%; min-height: 0; padding: 0; }
-      html.portada-cargada header .logo {
-        position: absolute;
-        left: 4.7%; top: 18%; width: 51%; height: 64%;
-        opacity: 0;
-      }
-      html.portada-cargada header .menu-movil {
-        display: block;
-        position: absolute;
-        right: 3%; top: 12%; width: 12%; height: 75%;
-        padding: 0;
-        font-size: 0;
-        color: transparent;
-      }
-      html.portada-cargada header .nav-links { top: 100%; z-index: 1001; }
-      html.portada-cargada header .menu-movil:focus-visible,
-      html.portada-cargada header .logo:focus-visible {
-        outline: 3px solid #ffce00;
-        outline-offset: -3px;
-        opacity: 1;
-      }
-
-      /* Recorte por CSS: muestra la portada, excluye el carrito de ejemplo. */
-      html.portada-cargada .hero {
-        display: block;
-        height: 142.129630vw;
-        min-height: 0;
-        padding: 0;
-        background: #070707 url("./imagenes/portada.jpg?v=3")
-                    left -16.898148vw / 100vw auto no-repeat;
-      }
-      html.portada-cargada .hero::before, html.portada-cargada .hero::after { display: none; }
-      html.portada-cargada .hero > .contenedor,
-      html.portada-cargada .hero-contenido {
-        position: static;
-        width: 100%; max-width: none;
-        height: 100%; margin: 0; padding: 0;
-      }
-
-      /* Texto accesible: el aspecto visible está en el arte original. */
-      html.portada-cargada .hero-etiqueta, html.portada-cargada .hero h1, html.portada-cargada .hero p {
-        position: absolute;
-        width: 1px; height: 1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
-        padding: 0; margin: 0; border: 0;
-      }
-      html.portada-cargada .hero-botones { display: contents; }
-      html.portada-cargada .hero-botones a {
-        position: absolute;
-        z-index: 3;
-        display: block;
-        padding: 0; margin: 0; border: 0;
-        background: transparent;
-        box-shadow: none;
-        font-size: 0; color: transparent;
-        transform: none;
-        border-radius: 4.5vw;
-      }
-      html.portada-cargada .hero-botones .boton {
-        left: 6.134259%; top: 48.697068%;
-        width: 41.666667%; height: 6.921824%;
-      }
-      html.portada-cargada .hero-botones .boton-borde {
-        left: 6.134259%; top: 57.491857%;
-        width: 39.699074%; height: 6.677524%;
-      }
-      html.portada-cargada .hero-botones a:focus-visible {
-        outline: 3px solid white;
-        outline-offset: 3px;
-      }
-      html.portada-cargada .hero-botones a:active { background: rgb(255 255 255 / 12%); }
-      html.portada-cargada .hero-botones a:hover { transform: none; background: transparent; }
-      .beneficios { margin-top: 0; }
-      html.portada-cargada body.inicio-visible .whatsapp-flotante { visibility: hidden; }
-
-      /* Carrito real: nunca se utilizan los $42.000 impresos en la foto. */
       .barra-carrito-movil {
         display: grid;
         grid-template-columns: 1.33fr .9fr 1fr;
@@ -1030,7 +926,7 @@
         min-height: 72px;
         height: 18.75vw;
         padding: 2.8vw 2.7vw 3vw 4.7vw;
-        border-top: 2px solid #efbd29;
+        border-top: 2px solid #e4ad9a;
         background: linear-gradient(115deg, #101010, #0d0d0d);
         box-shadow: none;
         font-family: Arial, sans-serif;
@@ -1055,28 +951,182 @@
         min-width: 4.4vw; height: 4.4vw;
         padding: 0 .6vw;
         border-radius: 50%;
-        color: #080808; background: #ffca05;
+        color: #080808; background: #e4ad9a;
         font-size: 2.9vw;
       }
       #totalMovil {
         border-left: 1px solid #666;
         text-align: center;
         font-size: 4.4vw;
-        color: #ffc500;
+        color: #e4ad9a;
         white-space: nowrap;
       }
       .ver-carrito-movil {
         display: grid; place-items: center;
         min-height: 9vw;
         padding: 1vw;
-        border: 1px solid #e8b932;
+        border: 1px solid #e4ad9a;
         border-radius: 3.5vw;
         white-space: nowrap;
       }
       .whatsapp-flotante { bottom: calc(max(72px, 18.75vw) + 14px); }
     }
 
-  </style>
+
+    /* Portada de Rey Zorro Burger y recorrido amarillo en los bordes. */
+    :root {
+      --principal: #e4ad9a;
+      --principal-claro: #f2c7b8;
+
+    }
+
+    @property --angulo-borde {
+      syntax: "<angle>";
+      inherits: false;
+      initial-value: 0deg;
+    }
+    @keyframes recorrido-amarillo {
+      to { --angulo-borde: 360deg; }
+    }
+
+    header { background: #080808; }
+    .logo img { display: block; width: clamp(143px, 34vw, 210px); height: auto; }
+    .hero {
+      position: relative;
+      background: #0d0d0d url("./imagenes/hamburguesa.webp") right center / auto 100% no-repeat;
+    }
+    .hero::before, .hero::after { display: none; }
+    .hero h1 { font-family: "Barlow Condensed", Impact, sans-serif; color: #f5ead3; text-transform: none; }
+    .hero h1 span { color: var(--principal-claro); }
+    .hero-etiqueta, .hero p { display: none; }
+    .hero-botones .icono-cta { width: 1.1em; height: 1.1em; flex-shrink: 0; }
+    .hero-botones a {
+      --superficie-boton: #101010;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55em;
+      color: #f6ebd5;
+      background-color: #101010;
+    }
+    .hero-botones a:hover { color: #f6ebd5; }
+
+    .pestana-menu.activa { --superficie-boton: #362322; color: var(--principal-claro); }
+    .elegir-plato, .ver-carrito-movil { --superficie-boton: #111; }
+    .sumar-plato, .boton-finalizar, .plato-item.seleccionado .elegir-plato {
+      --superficie-boton: #e4ad9a;
+      color: #111;
+    }
+    .boton-finalizar:hover { color: #111; }
+    .hero-botones a, .pestana-menu.activa, .elegir-plato,
+    .sumar-plato, .boton-finalizar, .ver-carrito-movil {
+      --borde-amarillo: conic-gradient(from var(--angulo-borde),
+        #9d5148 0deg, #9d5148 190deg, #c67d70 235deg,
+        #f2c7b8 295deg, #e4ad9a 320deg, #9d5148 360deg);
+      border: 2px solid transparent;
+      background: linear-gradient(var(--superficie-boton), var(--superficie-boton)) padding-box,
+                  var(--borde-amarillo) border-box;
+      animation: recorrido-amarillo 4.5s linear infinite;
+      box-shadow: none;
+    }
+    .plato-item.seleccionado .elegir-plato, .elegir-plato:hover { border-color: transparent; }
+    .elegir-plato:hover { background: linear-gradient(#e4ad9a, #e4ad9a) padding-box,
+                                     var(--borde-amarillo) border-box; }
+    .hero-botones a:hover { background: linear-gradient(#17140f, #17140f) padding-box,
+                                       var(--borde-amarillo) border-box; }
+    .plato-item.seleccionado { box-shadow: 0 17px 0 -10px #a65d52, 0 24px 38px #000b; }
+    .carrito-lateral { background: #111; }
+    .carrito-pie { padding-block: 20px; }
+    .controles-cantidad button { min-width: 34px; height: 34px; }
+    .ver-carrito-movil { border-radius: 3.5vw; }
+    .menu-esencial { background: #101010; }
+    .beneficios, .whatsapp-flotante[hidden] { display: none; }
+    body.inicio-visible .whatsapp-flotante { visibility: hidden; }
+
+    @media (min-width: 721px) {
+      .hero { background-image: linear-gradient(90deg, #0d0d0d 32%, transparent 68%), url("./imagenes/hamburguesa.webp"); }
+    }
+    @media (max-width: 720px) {
+      body { padding-bottom: max(72px, 18.75vw); }
+      header { position: relative; }
+      .hero {
+        display: block;
+        height: 68.12vw;
+        min-height: 0;
+        padding: 0;
+        background: #0d0d0d;
+        border-bottom: 0;
+      }
+      .hero::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        filter: none;
+        background: url("./imagenes/portada.webp") center top / 100% 100% no-repeat;
+        /* Excluye los dos botones dibujados para usar los enlaces reales. */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 83%, 42% 83%, 42% 59%, 0 59%);
+      }
+      .hero .contenedor, .hero-contenido { position: static; padding: 0; }
+      .hero-etiqueta, .hero h1, .hero p {
+        position: absolute; width: 1px; height: 1px;
+        overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+      }
+      .hero-botones { display: contents; }
+      .hero-botones a {
+        position: absolute;
+        z-index: 2;
+        left: 4.3%;
+        width: 32%;
+        height: 13%;
+        min-width: 0;
+        padding: 0 .25em;
+        border-radius: 2.6vw;
+        font-family: Arial, sans-serif;
+        font-size: clamp(12px, 3.7vw, 23px);
+        white-space: nowrap;
+      }
+      .hero-botones .boton { top: 65.5%; }
+      .hero-botones .boton-borde { top: 42%; }
+      .menu-esencial { padding-top: 36px; }
+      .barra-carrito-movil { grid-template-columns: 1.38fr .9fr 1.12fr; padding-left: 3.8vw; }
+      .resumen-carrito-movil { gap: 2.7vw; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-botones a, .pestana-menu.activa, .elegir-plato,
+      .sumar-plato, .boton-finalizar, .ver-carrito-movil { animation: none; }
+    }
+
+    .buscador-menu { padding-block: 12px; background: #101010; }
+    .buscador-menu input { width: 100%; padding: 10px 15px; border-radius: 999px;
+      border: 1px solid #e4ad9a; background: #111; color: #fff; font: inherit; }
+    .menu-cabecera { text-align: left; margin-bottom: 20px; }
+    .menu-cabecera h2 { color: var(--principal); font: 900 clamp(44px, 8vw, 75px)/1 "Barlow Condensed", Impact, sans-serif; }
+    .plato-texto h3 { color: var(--principal-claro); }
+    .carrito-lateral { scroll-margin-bottom: 100px; }
+    header .nav-links { display: flex; gap: clamp(12px, 4vw, 30px); }
+    @media (max-width:720px) {
+      header .logo img { width: clamp(132px, 57vw, 320px); }
+      header .nav-links { position: static; background: none; border: 0; padding: 0; flex-direction: row; width: auto; }
+      header .nav-links a { font-size: clamp(11px, 3.2vw, 16px); padding: 0; }
+      header .menu-movil { display: none; }
+      .hero-botones .icono-cta { display: none; }
+    }
+  
+/* Identidad retro Rey Zorro: crema, salmón y rojo envejecido. */
+:root{--fondo:#f4ead2;--fondo-2:#f4ead2;--fondo-3:#e9dcc3;--tarjeta:#fff7e6;--texto:#29231f;--texto-gris:#65564c;--borde:#d5c1aa;--principal:#b86e60;--principal-claro:#e4ad9a}
+body{font-family:Barlow,Arial,sans-serif}
+header{position:sticky;top:0;background:rgba(28,22,20,.48);backdrop-filter:blur(17px) saturate(145%);-webkit-backdrop-filter:blur(17px) saturate(145%);border-bottom:1px solid #ffffff33;color:white}
+header .nav{min-height:76px;gap:10px} header .logo img,footer .logo img{width:58px;height:58px;object-fit:contain}.logo .marca-nombre{color:inherit;font:900 24px/ .95 "Barlow Condensed",sans-serif}.marca-nombre small{display:block;color:#e4ad9a;font-size:12px;letter-spacing:3px;margin-top:4px}
+.hero{background:#181211 linear-gradient(90deg,#181211 20%,transparent 85%);background-image:linear-gradient(90deg,#181211 20%,#18121133 85%),url('./imagenes/hamburguesa.webp'),url('./imagenes/respaldo.webp');background-size:cover;background-position:center;min-height:510px;height:auto;color:#fff}
+.hero h1{font-size:clamp(48px,8vw,95px);color:#f5ead3}.hero h1 span{color:#e4ad9a}.hero p.hero-texto-escritorio{display:block;color:#f5ead3}.hero .hero-contenido{padding:65px 0}.hero-botones a{color:#f5ead3}.hero-botones .icono-cta{display:block}
+.buscador-menu{background:#f4ead2}.buscador-menu input{background:#fff8e9;color:#29231f;border-color:#b86e60}.menu-esencial{background:#f4ead2}.menu-cabecera h2{color:#8f473e}.lista-productos{background:#fff8e9;border-color:#d5c1aa}.plato-texto h3{color:#793d35}.plato-texto p{color:#65564c}.plato-item:not(:last-child):after{background:#e3d3bc}.plato-item:hover{background:#f3dfce}.plato-item.seleccionado{background:linear-gradient(110deg,#f1c6b6,#fff8e9);box-shadow:0 17px 0 -10px #b86e60,0 24px 38px #512a2925}.pestana-menu{background:#fff8e9;color:#49352f;border-color:#c6aa98}.pestana-menu.activa{--superficie-boton:#f1d5c7;color:#71372f}.detalle-plato label{color:#49352f}.detalle-plato textarea{background:#fff8e9;color:#29231f;border-color:#b78b7b}.plato-precio{color:#934b41}.carrito-lateral,.carrito-pie{background:#fff8e9;color:#29231f}.carrito-encabezado,.carrito-pie,.item-carrito{border-color:#d5c1aa}.carrito-vacio,.carrito-nota,.carrito-en-vivo,.item-carrito small{color:#65564c}.boton-finalizar,.sumar-plato,.plato-item.seleccionado .elegir-plato{--superficie-boton:#e4ad9a}.barra-carrito-movil{background:rgba(29,21,19,.78);backdrop-filter:blur(18px);color:white}.barra-carrito-movil strong,#totalMovil{color:#e4ad9a}.ventana-pedido{background:rgba(38,27,24,.72);color:white;backdrop-filter:blur(20px)}.ventana-titulo h2{color:#e4ad9a}footer{background:#241b18;color:#fff} .copyright{color:#d0b6a5}
+@media(max-width:720px){header{position:sticky}header .logo img{width:48px;height:48px}.logo .marca-nombre{font-size:21px}.hero{min-height:0;height:auto;background:#181211;background-image:linear-gradient(90deg,#181211e8 4%,#18121135 100%),url('./imagenes/hamburguesa.webp'),url('./imagenes/respaldo.webp');background-size:cover;background-position:center}.hero::before,.hero::after{display:none}.hero .contenedor,.hero-contenido{position:relative}.hero h1,.hero p.hero-texto-movil{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal}.hero h1{font-size:clamp(43px,10vw,64px);letter-spacing:-1px}.hero p.hero-texto-escritorio{display:none}.hero p.hero-texto-movil{display:block;color:#f5ead3}.hero .hero-contenido{padding:45px 0}.hero-botones{display:flex}.hero-botones a{position:static;width:auto;height:auto;min-height:46px;padding:0 18px;font-size:15px}.barra-carrito-movil{border-color:#e4ad9a}.menu-esencial{padding-top:36px}}
+
+</style>
 </head>
 
 
@@ -1092,34 +1142,10 @@
 
       <!-- CAMBIAR NOMBRE DEL CLIENTE -->
 
-      <a href="#inicio" class="logo">
-
-        <div class="logo-icono">
-          🍔
-        </div>
-
-        <div>
-          URBAN <span>BURGER</span>
-        </div>
-
-      </a>
+      <a href="#inicio" class="logo"><img src="./imagenes/marca.webp" width="237" height="237" alt=""><span class="marca-nombre">Rey Zorro <small>BURGER</small></span></a>
 
 
-      <nav class="nav-links" id="navLinks">
-
-        <a href="#inicio">Inicio</a>
-
-        <a href="#categorias">Categorías</a>
-
-        <a href="#menu">Menú</a>
-
-        <a href="#nosotros">Nosotros</a>
-
-        <a href="#ubicacion">Ubicación</a>
-
-        <a href="#redes">Redes</a>
-
-      </nav>
+      <nav class="nav-links" id="navLinks"><a href="#menu">Menú</a><a href="#ubicacion">Contacto</a></nav>
 
 
       <button
@@ -1143,6 +1169,7 @@
          HERO
          ======================================== -->
 
+    <div class="buscador-menu"><div class="contenedor"><input id="buscarMenu" type="search" aria-label="Buscar en el menú" placeholder="Buscar en el menú"></div></div>
     <section class="hero" id="inicio">
 
 
@@ -1160,8 +1187,7 @@
           <!-- CAMBIAR TEXTO PRINCIPAL -->
 
           <h1>
-            Hechas para
-            <span>disfrutar</span>
+            El rey del antojo<br><span>tiene su zorro</span>
           </h1>
 
 
@@ -1176,12 +1202,10 @@
           <div class="hero-botones">
 
             <a href="#menu" class="boton">
-              <svg class="icono-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11V9a8 8 0 0 1 16 0v2"/><path d="M3 11h18v5H3z"/><path d="M5 16v3h14v-3"/><path d="M2 22h20"/></svg> Ver menú ↓
+              <svg class="icono-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11V9a8 8 0 0 1 16 0v2"/><path d="M3 11h18v5H3z"/><path d="M5 16v3h14v-3"/><path d="M2 22h20"/></svg> Ver menú
             </a>
 
-            <a href="#nosotros" class="boton-borde">
-              <svg class="icono-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Conócenos
-            </a>
+            
 
           </div>
 
@@ -1275,11 +1299,7 @@
          ====================================================== -->
     <section class="menu-esencial" id="menu">
       <div class="contenedor">
-        <div class="cabecera-seccion menu-cabecera">
-          <p class="mini-titulo">Elige, personaliza y disfruta</p>
-          <h2 class="titulo-seccion">Nuestro <span>menú digital</span></h2>
-          <p class="texto-seccion">Explora nuestras recetas, elige tus favoritos y mira tu pedido sumarse en tiempo real.</p>
-        </div>
+        <div class="cabecera-seccion menu-cabecera"><h2 class="titulo-seccion">Nuestro menú</h2></div>
         <div class="categorias-pestanas" id="categorias" aria-label="Categorías de productos"></div>
         <div class="menu-distribucion">
           <div class="lista-productos" id="listaProductos" aria-live="polite"></div>
@@ -1303,255 +1323,7 @@
          PROMOCIÓN
          ======================================== -->
 
-    <section class="promo">
-
-      <div class="contenedor">
-
-        <div class="promo-box">
-
-          <div>
-
-            <p>
-              PROMOCIÓN DESTACADA
-            </p>
-
-            <h2>
-              Combo<br>
-              especial
-            </h2>
-
-            <p>
-              Hamburguesa + papas + bebida
-            </p>
-
-          </div>
-
-
-          <div class="promo-icono">
-            🍔🔥
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ========================================
-         NOSOTROS
-         ======================================== -->
-
-    <section id="nosotros">
-
-      <div class="contenedor nosotros-grid">
-
-
-        <div class="nosotros-img">
-
-          <img
-            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=85&w=1000&auto=format&fit=crop"
-            alt="Restaurante"
-          >
-
-        </div>
-
-
-        <div class="nosotros-texto">
-
-          <p class="mini-titulo">
-            Nuestra historia
-          </p>
-
-          <h2 class="titulo-seccion">
-            Cocinamos con
-            <span>pasión</span>
-          </h2>
-
-          <p>
-            Urban Burger nació con una idea sencilla:
-            preparar comida deliciosa con ingredientes frescos,
-            buenas porciones y una experiencia que haga
-            querer volver.
-          </p>
-
-          <p>
-            Esta sección está preparada para que cada cliente
-            pueda contar la historia de su restaurante,
-            negocio o emprendimiento.
-          </p>
-
-
-          <a
-            href="#ubicacion"
-            class="boton"
-          >
-            Visítanos
-          </a>
-
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-    <!-- ========================================
-         UBICACIÓN E INFORMACIÓN
-         ======================================== -->
-
-    <section class="info" id="ubicacion">
-
-      <div class="contenedor">
-
-
-        <div class="cabecera-seccion">
-
-          <p class="mini-titulo">
-            Encuéntranos
-          </p>
-
-          <h2 class="titulo-seccion">
-            Estamos cerca de <span>ti</span>
-          </h2>
-
-        </div>
-
-
-        <div class="info-grid">
-
-
-          <div class="info-card">
-
-            <div class="info-icono">
-              📍
-            </div>
-
-            <h3>
-              Ubicación
-            </h3>
-
-            <!-- CAMBIAR PARA CADA CLIENTE -->
-
-            <p>
-              Funza, Cundinamarca
-            </p>
-
-          </div>
-
-
-          <div class="info-card">
-
-            <div class="info-icono">
-              🕒
-            </div>
-
-            <h3>
-              Horarios
-            </h3>
-
-            <!-- CAMBIAR PARA CADA CLIENTE -->
-
-            <p>
-              Lunes a domingo<br>
-              12:00 p. m. - 10:00 p. m.
-            </p>
-
-          </div>
-
-
-          <div class="info-card">
-
-            <div class="info-icono">
-              📱
-            </div>
-
-            <h3>
-              Contacto
-            </h3>
-
-            <!-- CAMBIAR PARA CADA CLIENTE -->
-
-            <p>
-              +57 300 123 4567<br>
-              restaurante@email.com
-            </p>
-
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ========================================
-         REDES SOCIALES
-         ======================================== -->
-
-    <section id="redes">
-
-      <div class="contenedor">
-
-
-        <div class="cabecera-seccion">
-
-          <p class="mini-titulo">
-            Síguenos
-          </p>
-
-          <h2 class="titulo-seccion">
-            Encuéntranos en <span>redes</span>
-          </h2>
-
-          <p class="texto-seccion">
-            Conoce nuestras novedades,
-            promociones y productos.
-          </p>
-
-        </div>
-
-
-        <div class="redes-grid">
-
-
-          <!-- CAMBIAR LINKS PARA CADA CLIENTE -->
-
-          <a
-            class="red-social"
-            href="https://instagram.com"
-            target="_blank"
-          >
-            📸 Instagram
-          </a>
-
-
-          <a
-            class="red-social"
-            href="https://facebook.com"
-            target="_blank"
-          >
-            👍 Facebook
-          </a>
-
-
-          <a
-            class="red-social"
-            href="https://tiktok.com"
-            target="_blank"
-          >
-            🎵 TikTok
-          </a>
-
-
-        </div>
-
-      </div>
-
-    </section>
+    <section class="info" id="ubicacion"><div class="contenedor"><h2 class="titulo-seccion">Contacto</h2><p id="estadoContacto">Martes a domingo y festivos · 1:00 p. m. a 11:00 p. m. · Domicilios.</p></div></section>
 
 
   </main>
@@ -1562,120 +1334,10 @@
        ======================================== -->
 
   <footer>
-
     <div class="contenedor">
-
-
-      <div class="footer-grid">
-
-
-        <div class="footer-col">
-
-          <a href="#inicio" class="logo">
-
-            <div class="logo-icono">
-              🍔
-            </div>
-
-            <div>
-              URBAN <span>BURGER</span>
-            </div>
-
-          </a>
-
-          <p style="margin-top: 18px;">
-            Comida fresca, sabor increíble
-            y una experiencia para repetir.
-          </p>
-
-        </div>
-
-
-        <div class="footer-col">
-
-          <h3>
-            Navegación
-          </h3>
-
-          <a href="#inicio">
-            Inicio
-          </a>
-
-          <a href="#menu">
-            Menú
-          </a>
-
-          <a href="#nosotros">
-            Nosotros
-          </a>
-
-          <a href="#ubicacion">
-            Ubicación
-          </a>
-
-        </div>
-
-
-        <div class="footer-col">
-
-          <h3>
-            Menú
-          </h3>
-
-          <a href="#menu">
-            Hamburguesas
-          </a>
-
-          <a href="#menu">
-            Bebidas
-          </a>
-
-          <a href="#menu">
-            Entradas
-          </a>
-
-          <a href="#menu">
-            Postres
-          </a>
-
-        </div>
-
-
-        <div class="footer-col">
-
-          <h3>
-            Contacto
-          </h3>
-
-          <!-- CAMBIAR -->
-
-          <p>
-            📞 +57 300 123 4567
-          </p>
-
-          <p>
-            📍 Funza, Cundinamarca
-          </p>
-
-          <p>
-            ✉ restaurante@email.com
-          </p>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="copyright">
-
-        © 2026 Urban Burger · Todos los derechos reservados
-
-      </div>
-
-
+      <a href="#inicio" class="logo"><img src="./imagenes/marca.webp" width="237" height="237" alt=""><span class="marca-nombre">Rey Zorro <small>BURGER</small></span></a>
+      <div class="copyright">© 2026 Rey Zorro Burger</div>
     </div>
-
   </footer>
 
 
@@ -1686,7 +1348,7 @@
 
   <a
     class="whatsapp-flotante"
-    href="https://wa.me/573144073259"
+    href="#ubicacion" hidden
     target="_blank"
     aria-label="WhatsApp"
   >
@@ -1775,101 +1437,458 @@
      Número conservado del sistema original del archivo recibido.
      ======================================================== */
   (() => {
-    const WHATSAPP = "573144073259";
-    const RESTAURANTE = "URBAN BURGER";
+    const WHATSAPP = "573112201212"; // Número de Rey Zorro Burger, con indicativo y sin espacios.
+    const RESTAURANTE = "REY ZORRO BURGER";
 
     /* ========================================================
        PRODUCTOS - NOMBRE, RECETA, PRECIO Y CATEGORÍA
-       12 productos conservados del HTML original.
+       Productos y precios legibles de la carta de Rey Zorro Burger.
        Para añadir platos, copiar un objeto y cambiar sus datos.
        ======================================================== */
     const PRODUCTOS = [
-    {
-        "id": "1",
-        "categoria": "Hamburguesas",
-        "nombre": "Burger Clásica",
-        "descripcion": "Carne artesanal, queso cheddar,\n                vegetales frescos y salsa especial.",
-        "precio": 18000
-    },
-    {
-        "id": "2",
-        "categoria": "Hamburguesas",
-        "nombre": "Burger Doble",
-        "descripcion": "Doble carne, doble queso,\n                tocineta y salsa de la casa.",
-        "precio": 24000
-    },
-    {
-        "id": "3",
-        "categoria": "Hamburguesas",
-        "nombre": "Burger Especial",
-        "descripcion": "Carne artesanal, queso,\n                cebolla caramelizada y salsa premium.",
-        "precio": 22000
-    },
-    {
-        "id": "4",
-        "categoria": "Bebidas",
-        "nombre": "Limonada Natural",
-        "descripcion": "Preparada al momento\n                con limón fresco y hielo.",
-        "precio": 7000
-    },
-    {
-        "id": "5",
-        "categoria": "Bebidas",
-        "nombre": "Gaseosa",
-        "descripcion": "Diferentes sabores\n                para acompañar tu comida.",
-        "precio": 5000
-    },
-    {
-        "id": "6",
-        "categoria": "Bebidas",
-        "nombre": "Bebida Especial",
-        "descripcion": "Refrescante mezcla\n                preparada especialmente para la casa.",
-        "precio": 9000
-    },
-    {
-        "id": "7",
-        "categoria": "Entradas",
-        "nombre": "Papas Clásicas",
-        "descripcion": "Papas crocantes\n                recién preparadas.",
-        "precio": 8000
-    },
-    {
-        "id": "8",
-        "categoria": "Entradas",
-        "nombre": "Papas Especiales",
-        "descripcion": "Papas con queso,\n                salsa especial y toppings.",
-        "precio": 13000
-    },
-    {
-        "id": "9",
-        "categoria": "Entradas",
-        "nombre": "Pollo Crunch",
-        "descripcion": "Pollo crocante\n                acompañado de salsa de la casa.",
-        "precio": 16000
-    },
-    {
-        "id": "10",
-        "categoria": "Postres",
-        "nombre": "Torta de Chocolate",
-        "descripcion": "Porción suave y chocolatosa,\n                perfecta para cerrar.",
-        "precio": 10000
-    },
-    {
-        "id": "11",
-        "categoria": "Postres",
-        "nombre": "Postre de la Casa",
-        "descripcion": "Una preparación especial\n                que cambia según disponibilidad.",
-        "precio": 12000
-    },
-    {
-        "id": "12",
-        "categoria": "Postres",
-        "nombre": "Dulce Especial",
-        "descripcion": "Preparación dulce\n                perfecta para acompañar una bebida.",
-        "precio": 9000
-    }
+  {
+    "id": "zorro-1",
+    "categoria": "Entradas y combos",
+    "nombre": "Carnes · 2 unidades",
+    "descripcion": "Pan tajado blanco de finas hierbas, salami, tocineta, jamón, queso mozzarella y chorizo.",
+    "precio": 12000
+  },
+  {
+    "id": "zorro-2",
+    "categoria": "Entradas y combos",
+    "nombre": "Carnes · 4 unidades",
+    "descripcion": "Pan tajado blanco de finas hierbas, salami, tocineta, jamón, queso mozzarella y chorizo.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-3",
+    "categoria": "Entradas y combos",
+    "nombre": "Vegetales · 2 unidades",
+    "descripcion": "Pan tajado blanco de finas hierbas, tomates frescos, maíz, pepino, jalapeños, aceitunas, queso mozzarella y champiñones.",
+    "precio": 12000
+  },
+  {
+    "id": "zorro-4",
+    "categoria": "Entradas y combos",
+    "nombre": "Vegetales · 4 unidades",
+    "descripcion": "Pan tajado blanco de finas hierbas, tomates frescos, maíz, pepino, jalapeños, aceitunas, queso mozzarella y champiñones.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-5",
+    "categoria": "Entradas y combos",
+    "nombre": "Queso asado",
+    "descripcion": "125 g de queso asado a la plancha, tomates aderezados con aceite de oliva y finas hierbas.",
+    "precio": 10000
+  },
+  {
+    "id": "zorro-6",
+    "categoria": "Entradas y combos",
+    "nombre": "Papas + jugo natural 9 oz",
+    "descripcion": "",
+    "precio": 8000
+  },
+  {
+    "id": "zorro-7",
+    "categoria": "Entradas y combos",
+    "nombre": "Papas + gaseosa",
+    "descripcion": "",
+    "precio": 9000
+  },
+  {
+    "id": "zorro-8",
+    "categoria": "Entradas y combos",
+    "nombre": "Papas + cerveza o jugo en leche",
+    "descripcion": "",
+    "precio": 10000
+  },
+  {
+    "id": "zorro-9",
+    "categoria": "Entradas y combos",
+    "nombre": "Papas francesas · porción",
+    "descripcion": "",
+    "precio": 6000
+  },
+  {
+    "id": "zorro-10",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Carne",
+    "descripcion": "Carne artesanal tipo hamburguesa. Pan árabe, dos quesos, jamón, tomates frescos, tocineta, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-11",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Carne · Doble",
+    "descripcion": "Carne artesanal tipo hamburguesa. Pan árabe, dos quesos, jamón, tomates frescos, tocineta, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 23000
+  },
+  {
+    "id": "zorro-12",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Carne · Triple",
+    "descripcion": "Carne artesanal tipo hamburguesa. Pan árabe, dos quesos, jamón, tomates frescos, tocineta, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 28000
+  },
+  {
+    "id": "zorro-13",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Pollo",
+    "descripcion": "Hamburguesa de pollo apanado. Pan árabe, dos quesos, jamón, tomates frescos, tocineta, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 21000
+  },
+  {
+    "id": "zorro-14",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Pollo · Doble",
+    "descripcion": "Hamburguesa de pollo apanado. Pan árabe, dos quesos, jamón, tomates frescos, tocineta, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 25000
+  },
+  {
+    "id": "zorro-15",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Pollo · Triple",
+    "descripcion": "Hamburguesa de pollo apanado. Pan árabe, dos quesos, jamón, tomates frescos, tocineta, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 30000
+  },
+  {
+    "id": "zorro-16",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Vegetales",
+    "descripcion": "Carne de lentejas macerada con cebollas y pimentones ahumados, pan árabe, dos quesos, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-17",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Vegetales · Doble",
+    "descripcion": "Carne de lentejas macerada con cebollas y pimentones ahumados, pan árabe, dos quesos, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 23000
+  },
+  {
+    "id": "zorro-18",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Vegetales · Triple",
+    "descripcion": "Carne de lentejas macerada con cebollas y pimentones ahumados, pan árabe, dos quesos, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 28000
+  },
+  {
+    "id": "zorro-19",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Mixta · Doble",
+    "descripcion": "Carne + pollo / carne + vegetariana / pollo + vegetariana, pan árabe, dos quesos, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 25000
+  },
+  {
+    "id": "zorro-20",
+    "categoria": "Hamburguesas",
+    "nombre": "Hamburguesa Mixta · Triple",
+    "descripcion": "Carne + pollo / carne + vegetariana / pollo + vegetariana, pan árabe, dos quesos, acompañamientos y salsa de la casa. Acompañamientos: maíz, piña, pepinillos y jalapeños.",
+    "precio": 30000
+  },
+  {
+    "id": "zorro-21",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer",
+    "descripcion": "Carne artesanal tipo hamburguesa. Masa crocante envolvente, dos quesos, tomates frescos, jamón, tocineta, acompañamientos y salsa de la casa.",
+    "precio": 21000
+  },
+  {
+    "id": "zorro-22",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer · Doble",
+    "descripcion": "Carne artesanal tipo hamburguesa. Masa crocante envolvente, dos quesos, tomates frescos, jamón, tocineta, acompañamientos y salsa de la casa.",
+    "precio": 25000
+  },
+  {
+    "id": "zorro-23",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer Vegetales",
+    "descripcion": "Carne de lentejas macerada con cebollas y pimentones ahumados, dos quesos, tomates frescos, acompañamientos y salsa de la casa.",
+    "precio": 21000
+  },
+  {
+    "id": "zorro-24",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer Vegetales · Doble",
+    "descripcion": "Carne de lentejas macerada con cebollas y pimentones ahumados, dos quesos, tomates frescos, acompañamientos y salsa de la casa.",
+    "precio": 24000
+  },
+  {
+    "id": "zorro-25",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer Pollo",
+    "descripcion": "Hamburguesa de pollo apanado. Masa crocante envolvente, dos quesos, tomates frescos, jamón, tocineta, acompañamientos y salsa de la casa.",
+    "precio": 22000
+  },
+  {
+    "id": "zorro-26",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer Pollo · Doble",
+    "descripcion": "Hamburguesa de pollo apanado. Masa crocante envolvente, dos quesos, tomates frescos, jamón, tocineta, acompañamientos y salsa de la casa.",
+    "precio": 27000
+  },
+  {
+    "id": "zorro-27",
+    "categoria": "Menú especial",
+    "nombre": "Dona Burguer Mixta",
+    "descripcion": "Carne + pollo / carne + vegetariana / pollo + vegetariana.",
+    "precio": 27000
+  },
+  {
+    "id": "zorro-28",
+    "categoria": "Menú especial",
+    "nombre": "Zorro",
+    "descripcion": "Carne artesanal tipo hamburguesa, Pan perro, dos quesos, jamón, papitas trituradas, tocineta, acompañamientos y salsa de la casa.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-29",
+    "categoria": "Menú especial",
+    "nombre": "Zorro Pollo",
+    "descripcion": "Pollo apanado, Pan perro, dos quesos, jamón, papitas trituradas, tocineta, acompañamientos y salsa de la casa.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-30",
+    "categoria": "Menú especial",
+    "nombre": "Zorro Vegetales",
+    "descripcion": "Carne de lentejas macerada con cebollas y pimentones ahumados, pan perro, dos quesos, papitas trituradas, acompañamientos y salsa de la casa.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-31",
+    "categoria": "Sanduches y perros",
+    "nombre": "Sanduche Cerdo",
+    "descripcion": "Medallón de lomo de cerdo salteado, pan árabe, queso mozzarella, tocineta picada, jamón, cuadritos de plátano maduro frito, pico de gallo y salsa de chile dulce al gusto.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-32",
+    "categoria": "Sanduches y perros",
+    "nombre": "Sanduche Pollo",
+    "descripcion": "Pollo en fajitas salteadas, pan árabe, queso mozzarella, tocineta picada, jamón, tomates frescos, champiñones y guacamole.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-33",
+    "categoria": "Sanduches y perros",
+    "nombre": "Sanduche Vegetales",
+    "descripcion": "Vegetales fritos o salteados, pan árabe, champiñones, aceitunas, maíz, tomates frescos, cebolla, queso mozzarella, aguacate, pepinillos y jalapeños.",
+    "precio": 20000
+  },
+  {
+    "id": "zorro-34",
+    "categoria": "Sanduches y perros",
+    "nombre": "Medallones de cerdo grillé",
+    "descripcion": "Medallones de lomo de cerdo, queso asado, papas a la francesa y guacamole.",
+    "precio": 30000
+  },
+  {
+    "id": "zorro-35",
+    "categoria": "Sanduches y perros",
+    "nombre": "Perros calientes / choriperros",
+    "descripcion": "Salchicha tipo americana o chorizo, pan perro, papa triturada, queso mozzarella, tocineta, jamón, acompañamientos y salsa de la casa.",
+    "precio": 16000
+  },
+  {
+    "id": "zorro-36",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Mazorcada tradicional",
+    "descripcion": "Maíz, papa francesa, carne artesanal tipo hamburguesa, jamón, tocineta, chorizo, queso fundido, papitas trituradas, torrejas de maíz y salsa de la casa.",
+    "precio": 30000
+  },
+  {
+    "id": "zorro-37",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Mazorcada de pollo",
+    "descripcion": "Pollo, Maíz, papa francesa, carne artesanal tipo hamburguesa, jamón, tocineta, chorizo, queso fundido, papitas trituradas, torrejas de maíz y salsa de la casa.",
+    "precio": 35000
+  },
+  {
+    "id": "zorro-38",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Mazorcada de cerdo",
+    "descripcion": "Cerdo, Maíz, papa francesa, carne artesanal tipo hamburguesa, jamón, tocineta, chorizo, queso fundido, papitas trituradas, torrejas de maíz y salsa de la casa.",
+    "precio": 35000
+  },
+  {
+    "id": "zorro-39",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Mazorcada vegetariana",
+    "descripcion": "Maíz, papa francesa, carne de lenteja, champiñones, aceitunas, tomates frescos, cebolla, queso mozzarella, aguacate, papas trituradas, torrejas de maíz, pepinillos y jalapeños.",
+    "precio": 30000
+  },
+  {
+    "id": "zorro-40",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Mazorcada Mix",
+    "descripcion": "Papas francesas, maíz, carne artesanal tipo hamburguesa, lomo de cerdo, pollo apanado, jamón, tocineta, chorizo, vegetales a la plancha, papas trituradas, queso fundido, torrejas de maíz, aguacate y salsas de la casa.",
+    "precio": 40000
+  },
+  {
+    "id": "zorro-41",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Salchipapas Mix",
+    "descripcion": "Papas francesas, salchichas, chorizo, champiñones y salsa de la casa.",
+    "precio": 22000
+  },
+  {
+    "id": "zorro-42",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Salchipapa / choripapa",
+    "descripcion": "Salchicha tipo americana o chorizo, papa francesa y salsa de la casa.",
+    "precio": 12000
+  },
+  {
+    "id": "zorro-43",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Champipapa",
+    "descripcion": "Champiñones salteados, papa francesa y salsa de la casa.",
+    "precio": 12000
+  },
+  {
+    "id": "zorro-44",
+    "categoria": "Mazorcadas y salchipapas",
+    "nombre": "Picada",
+    "descripcion": "Papas francesas, ensalada de lechuga, tomate, aguacate y vinagreta de la casa, chorizo, salchicha americana, carne artesanal tipo hamburguesa, lomo de cerdo, pollo apanado, papas cabello de ángel, queso fundido y salsas de la casa.",
+    "precio": 35000
+  },
+  {
+    "id": "zorro-45",
+    "categoria": "Bebidas",
+    "nombre": "Jugos naturales 12 oz",
+    "descripcion": "",
+    "precio": 6000
+  },
+  {
+    "id": "zorro-46",
+    "categoria": "Bebidas",
+    "nombre": "Jugos naturales en leche 12 oz",
+    "descripcion": "",
+    "precio": 7000
+  },
+  {
+    "id": "zorro-47",
+    "categoria": "Bebidas",
+    "nombre": "Jugo Hit personal",
+    "descripcion": "",
+    "precio": 4000
+  },
+  {
+    "id": "zorro-48",
+    "categoria": "Bebidas",
+    "nombre": "Jugo Hit litro",
+    "descripcion": "",
+    "precio": 7000
+  },
+  {
+    "id": "zorro-49",
+    "categoria": "Bebidas",
+    "nombre": "Gaseosa personal",
+    "descripcion": "",
+    "precio": 4000
+  },
+  {
+    "id": "zorro-50",
+    "categoria": "Bebidas",
+    "nombre": "Coca-Cola 1.5 L",
+    "descripcion": "",
+    "precio": 8000
+  },
+  {
+    "id": "zorro-51",
+    "categoria": "Bebidas",
+    "nombre": "Sprite 1.5 L",
+    "descripcion": "",
+    "precio": 8000
+  },
+  {
+    "id": "zorro-52",
+    "categoria": "Bebidas",
+    "nombre": "Quatro 1.5 L",
+    "descripcion": "",
+    "precio": 8000
+  },
+  {
+    "id": "zorro-53",
+    "categoria": "Bebidas",
+    "nombre": "Refajo",
+    "descripcion": "",
+    "precio": 5000
+  },
+  {
+    "id": "zorro-54",
+    "categoria": "Bebidas",
+    "nombre": "Agua",
+    "descripcion": "",
+    "precio": 2000
+  },
+  {
+    "id": "zorro-55",
+    "categoria": "Bebidas",
+    "nombre": "Agua con gas",
+    "descripcion": "",
+    "precio": 2000
+  },
+  {
+    "id": "zorro-56",
+    "categoria": "Bebidas",
+    "nombre": "Natu Malta",
+    "descripcion": "",
+    "precio": 5000
+  },
+  {
+    "id": "zorro-57",
+    "categoria": "Cervezas",
+    "nombre": "Andina",
+    "descripcion": "",
+    "precio": 5000
+  },
+  {
+    "id": "zorro-58",
+    "categoria": "Cervezas",
+    "nombre": "Sol",
+    "descripcion": "",
+    "precio": 7000
+  },
+  {
+    "id": "zorro-59",
+    "categoria": "Cervezas",
+    "nombre": "Tecate",
+    "descripcion": "",
+    "precio": 5000
+  },
+  {
+    "id": "zorro-60",
+    "categoria": "Cervezas",
+    "nombre": "Heineken 330 ml",
+    "descripcion": "",
+    "precio": 6000
+  },
+  {
+    "id": "zorro-61",
+    "categoria": "Cervezas",
+    "nombre": "Heineken 250 ml",
+    "descripcion": "",
+    "precio": 5000
+  },
+  {
+    "id": "zorro-62",
+    "categoria": "Cervezas",
+    "nombre": "Tres Cordilleras",
+    "descripcion": "",
+    "precio": 8000
+  },
+  {
+    "id": "zorro-63",
+    "categoria": "Cervezas",
+    "nombre": "Stella Artois",
+    "descripcion": "",
+    "precio": 8000
+  }
 ];
-    const ICONOS = {Hamburguesas:"🍔", Bebidas:"🥤", Entradas:"🍟", Postres:"🍰"};
+    const ICONOS = {"Entradas y combos":"🍟","Hamburguesas":"🍔","Menú especial":"🦊","Sanduches y perros":"🌭","Mazorcadas y salchipapas":"🌽","Bebidas":"🥤","Cervezas":"🍺"};
     const formato = valor => "$" + Number(valor).toLocaleString("es-CO");
     const carrito = new Map();
     let categoriaActual = "Hamburguesas";
@@ -1879,7 +1898,7 @@
        GUARDAR Y RECUPERAR EL CARRITO
        ======================================================== */
     try {
-      const guardado = JSON.parse(localStorage.getItem("urban-burger-esencial-carrito") || "[]");
+      const guardado = JSON.parse(localStorage.getItem("rey-zorro-carrito") || "[]");
       if(Array.isArray(guardado)) guardado.forEach(x => {
         if(PRODUCTOS.some(p=>p.id===x.id) && Number.isInteger(x.cantidad) && x.cantidad>0 && x.cantidad<=100) {
           const key = `${x.id}||${x.nota || ""}`;
@@ -1888,7 +1907,7 @@
       });
     } catch(err) { console.warn("No se pudo recuperar el carrito",err); }
     const guardar = () => {
-      try { localStorage.setItem("urban-burger-esencial-carrito",JSON.stringify([...carrito.values()])); } catch(err) {}
+      try { localStorage.setItem("rey-zorro-carrito",JSON.stringify([...carrito.values()])); } catch(err) {}
     };
 
     /* ========================================================
@@ -1896,13 +1915,19 @@
        ======================================================== */
     const contenedorPestanas = document.getElementById("categorias");
     const contenedorProductos = document.getElementById("listaProductos");
+    const buscador = document.getElementById("buscarMenu");
+    const normalizar = texto => texto.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+    buscador.addEventListener("input", () => { elegido = null; renderizarMenu(); });
+    buscador.addEventListener("keydown", evento => {
+      if (evento.key === "Enter") document.getElementById("menu").scrollIntoView();
+    });
     [...new Set(PRODUCTOS.map(p=>p.categoria))].forEach(cat=>{
       const boton=document.createElement("button");
       boton.type="button";boton.className="pestana-menu";
       boton.textContent=`${ICONOS[cat]||"🍽️"}  ${cat}`;
       boton.dataset.categoria=cat;
       boton.addEventListener("click",()=>{
-        categoriaActual=cat;elegido=null;renderizarMenu();
+        categoriaActual=cat;buscador.value="";elegido=null;renderizarMenu();
       });
       contenedorPestanas.append(boton);
     });
@@ -1911,13 +1936,18 @@
        PLATOS 3D - CLIC LEVANTA TARJETA Y MUESTRA DESCRIPCIÓN
        ======================================================== */
     function renderizarMenu() {
+      const consulta = normalizar(buscador.value.trim());
       contenedorPestanas.querySelectorAll("button").forEach(b=>{
-        const activo=b.dataset.categoria===categoriaActual;
+        const activo=!consulta && b.dataset.categoria===categoriaActual;
         b.classList.toggle("activa",activo);
         b.setAttribute("aria-pressed",String(activo));
       });
       contenedorProductos.replaceChildren();
-      PRODUCTOS.filter(p=>p.categoria===categoriaActual).forEach(p=>{
+      const visibles = PRODUCTOS.filter(p => consulta
+        ? normalizar(`${p.nombre} ${p.categoria} ${p.descripcion}`).includes(consulta)
+        : p.categoria === categoriaActual);
+      if (!visibles.length) contenedorProductos.textContent = "No encontramos platos para esa búsqueda.";
+      visibles.forEach(p=>{
         const tarjeta=document.createElement("article");
         tarjeta.className="plato-item"+(elegido===p.id?" seleccionado":"");
         const fila=document.createElement("div");fila.className="plato-linea";
@@ -2022,7 +2052,7 @@
     const entrega=document.getElementById("entregaPedido"),direccion=document.getElementById("direccionPedido"),campo=document.getElementById("campoDireccion");
     entrega.addEventListener("change",()=>{const domicilio=entrega.value==="Domicilio";campo.hidden=!domicilio;direccion.required=domicilio;});
     document.getElementById("formularioPedido").addEventListener("submit",e=>{
-      e.preventDefault();if(!carrito.size){alert("El carrito está vacío.");return;}
+      e.preventDefault();if(!WHATSAPP){alert("El WhatsApp del restaurante está pendiente de configurar.");return;}if(!carrito.size){alert("El carrito está vacío.");return;}
       const d=new FormData(e.currentTarget),lineas=[];let total=0;
       carrito.forEach(item=>{
         const p=PRODUCTOS.find(x=>x.id===item.id);if(!p)return;
@@ -2033,59 +2063,17 @@
       window.location.href=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensaje)}`;
     });
     const enlaceContacto=document.querySelector(".whatsapp-flotante");
-    if(enlaceContacto)enlaceContacto.href=`https://wa.me/${WHATSAPP}`;
+    if(enlaceContacto && WHATSAPP){enlaceContacto.hidden=false;enlaceContacto.href=`https://wa.me/${WHATSAPP}`;const contacto = document.createElement("a"); contacto.href = enlaceContacto.href; contacto.textContent = "Escríbenos por WhatsApp"; document.getElementById("estadoContacto").append(document.createElement("br"),contacto);}
     renderizarMenu();actualizarCarrito();
   })();
   </script>
 
-  <!-- Evita tapar la portada con el botón flotante de WhatsApp. -->
+
   <script>
-    if ('IntersectionObserver' in window) {
-      const observadorInicio = new IntersectionObserver(([entrada]) => {
-        document.body.classList.toggle('inicio-visible', entrada.isIntersecting);
-      });
-      observadorInicio.observe(document.getElementById('inicio'));
-    } else {
-      document.body.classList.remove('inicio-visible');
-    }
+    const heroObserver = new IntersectionObserver(([entry]) => {
+      document.body.classList.toggle('inicio-visible', entry.isIntersecting);
+    });
+    heroObserver.observe(document.getElementById('inicio'));
   </script>
-
-  <!-- ========================================================
-       CARGA SEGURA DE PORTADA
-       La imagen está en imagenes/portada.jpg, según el repositorio actual.
-       La composición se activa solo cuando la imagen cargó bien.
-       Si falta la imagen, los textos y botones siguen visibles.
-       ======================================================== -->
-  <script id="cargaPortadaMovil">
-    (() => {
-      const pantallaMovil = window.matchMedia('(max-width: 720px)');
-      let cargaIniciada = false;
-
-      function cargarPortada() {
-        if (!pantallaMovil.matches || cargaIniciada) return;
-        cargaIniciada = true;
-        const portada = new Image();
-        portada.onload = () => {
-          if (portada.naturalWidth > 0 && portada.naturalHeight > 0) {
-            document.documentElement.classList.add('portada-cargada');
-          }
-        };
-        portada.onerror = () => {
-          cargaIniciada = false;
-          document.documentElement.classList.remove('portada-cargada');
-          console.warn('No se encontró imagenes/portada.jpg. Se mantiene el inicio con textos y botones visibles.');
-        };
-        portada.src = './imagenes/portada.jpg?v=3';
-      }
-
-      cargarPortada();
-      if (pantallaMovil.addEventListener) {
-        pantallaMovil.addEventListener('change', cargarPortada);
-      } else {
-        pantallaMovil.addListener(cargarPortada);
-      }
-    })();
-  </script>
-
 </body>
 </html>
